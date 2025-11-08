@@ -6,19 +6,9 @@ export const Footer = () => {
     <footer className='footer'>
       <div className="content has-text-centered">
         <p>
-          <strong>NotiApp</strong> hecho por <a>Flores Luciano</a> & <a>Salto Ignacio.</a>
+          <strong>NotiApp</strong> hecho por <a>Flores Luciano</a> & <a href='https://www.linkedin.com/in/jorge-ignacio-salto-0b29221bb'>Salto Ignacio.</a>
         </p>
-        <div className="social-icons">
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-facebook-f"></i>
-          </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-twitter"></i>
-          </a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-instagram"></i>
-          </a>
-        </div>
+        
       </div>
     </footer>
   );
