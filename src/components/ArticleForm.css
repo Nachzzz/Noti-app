@@ -45,7 +45,7 @@ select {
     font-size: 14px; /* Tamaño de la fuente */
     line-height: 1.5; /* Altura de línea */
     resize: none; /* Evita que el usuario cambie el tamaño */
-    background-color: #45a049;
+    background-color: #ffffff;
 }
 
 .input:focus,

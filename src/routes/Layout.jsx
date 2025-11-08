@@ -1,17 +1,17 @@
-
 import { Outlet } from "react-router-dom";
 import { AuthProvider } from "../contexts/AuthContext";
 import NavBar from "../components/NavBar";
-import {Footer} from '../components/Footer';
-import "./Layout.css"
-
+import { Footer } from '../components/Footer';
+import "./Layout.css";
 
 export default function Layout() {
     return (
         <AuthProvider>
-            <div>
+            <div className="layout">
                 <NavBar />
-                <Outlet />
+                <main className="layout__main">
+                    <Outlet />
+                </main>
                 <Footer />
             </div>
         </AuthProvider>

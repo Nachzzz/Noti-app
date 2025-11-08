@@ -1,7 +1,103 @@
-body {
-    display: block !important; /* Sobrescribe cualquier configuración previa */
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    padding-top: 10px !important;
+/* ===== VARIABLES PARA LAYOUT ===== */
+:root {
+  --header-height: 70px;
+  --footer-height: 80px;
+  --main-min-height: calc(100vh - var(--header-height) - var(--footer-height));
+}
+
+/* ===== ESTILOS BASE DEL LAYOUT - PANTALLA COMPLETA ===== */
+.layout {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden; /* Previene scroll horizontal no deseado */
+  background-color: var(--bg-primary, #242424);
+  color: var(--text-primary, rgba(255, 255, 255, 0.87));
+}
+
+/* ===== HEADER/NAVIGATION - ANCHO COMPLETO ===== */
+.layout > :first-child:not(.layout__main) {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--bg-secondary, #1a1a1a);
+  box-shadow: var(--shadow-md, 0 4px 6px rgba(0, 0, 0, 0.3));
+  backdrop-filter: blur(10px);
+}
+
+/* ===== CONTENIDO PRINCIPAL - ANCHO COMPLETO ===== */
+.layout__main {
+  flex: 1;
+  min-height: var(--main-min-height);
+  width: 100%;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== CONTENEDOR PARA EL OUTLET - ANCHO COMPLETO ===== */
+.layout__main > * {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== FOOTER - ANCHO COMPLETO ===== */
+.layout > :last-child:not(.layout__main) {
+  width: 100%;
+  margin-top: auto;
+  background-color: var(--bg-secondary, #1a1a1a);
+  border-top: 1px solid var(--border-color, rgba(255, 255, 255, 0.1));
+}
+
+/* ===== ANIMACIONES DE TRANSICIÓN ENTRE RUTAS ===== */
+.layout__main > * {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  :root {
+    --header-height: 60px;
+    --footer-height: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --header-height: 55px;
+    --footer-height: 60px;
+  }
+}
+
+/* ===== ESTILOS PARA CARGA ===== */
+.layout--loading .layout__main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== REDUCIR MOVIMIENTO ===== */
+@media (prefers-reduced-motion: reduce) {
+  .layout__main > * {
+    animation: none;
+  }
 }

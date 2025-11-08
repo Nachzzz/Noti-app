@@ -9,6 +9,10 @@ h1{
     padding-top: 50px;
 }
 
+h2{
+    color: #333;
+}
+
 .aestetic-container {
     display: flex;
     flex-direction: column;
