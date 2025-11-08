@@ -1,0 +1,220 @@
+/* Estilo para el contenedor principal */
+.container {
+    margin-top: 2rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Estilo para el cuadro contenedor de los datos */
+.box {
+    background-color: #f8f8f8; /* Fondo claro */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    padding: 2rem;
+}
+
+/* Estilo para los títulos */
+.title {
+    font-family: 'Arial', sans-serif;
+    color: #ffffff; /* Color oscuro */
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.title.is-3{
+    color: #1976d2;
+}
+
+.bio {
+    font-family: 'Arial', sans-serif;
+    color: #ffffff; 
+    text-align: center;
+    /* margin-bottom: 2rem; */
+}
+
+.bioSpan{
+    display: flex;
+    justify-content: center;
+    background-color: #436f8b;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+
+.subtitle {
+    font-family: 'Arial', sans-serif;
+    color: #ffffff; /* Color gris oscuro */
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Estilo para los campos de entrada */
+.input {
+    border: 2px solid #209cee; /* Borde azul */
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    background-color: #e6f7ff; /* Fondo azul claro */
+    color: #363636;
+    border-radius: 5px;
+}
+
+.input:read-only {
+    background-color: #e6f7ff; /* Fondo azul claro para campos de solo lectura */
+    cursor: not-allowed;
+}
+
+/* Estilo para las etiquetas */
+.label {
+    font-weight: bold;
+    color: #363636; /* Color oscuro */
+    margin-bottom: 0.5rem;
+}
+
+/* Estilo para el texto de la biografía */
+.content {
+    font-size: 1rem;
+    color: #4a4a4a; /* Color gris oscuro */
+    text-align: justify;
+}
+
+/* Estilo para los botones */
+.buttons {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.button {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.button.is-link.is-light {
+    background-color: #209cee; /* Azul claro */
+    color: #fff;
+}
+
+.button.is-link.is-light:hover {
+    background-color: #1976d2; /* Azul más oscuro al pasar el mouse */
+}
+
+.button.is-danger.is-light {
+    background-color: #ff3860; /* Rojo claro */
+    color: #fff;
+}
+
+.button.is-danger.is-light:hover {
+    background-color: #d32f2f; /* Rojo más oscuro al pasar el mouse */
+}
+
+.button.is-danger.is-dark {
+    background-color: #d32f2f;
+}
+
+/* Estilo para mensajes de carga y error */
+.has-text-centered {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #4a4a4a;
+    margin-top: 2rem;
+}
+
+.has-text-danger {
+    color: #ff3860;
+}
+
+.formul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%; /* Ajusta este valor según lo necesites */
+    max-width: 400px; /* Establece un ancho máximo */
+    margin: 0 auto; /* Centra el formulario horizontalmente */
+    padding: 5%;
+    background-color: #3f3f3f;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.columns{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%; /* Ajusta este valor según lo necesites */
+    max-width: 400px; /* Establece un ancho máximo */
+    margin: 0 auto; /* Centra el formulario horizontalmente */
+    padding: 20px;
+    background-color: #3f3f3f;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.buttonLogout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #d32f2f;
+    padding-left: 150px;
+    padding-bottom: 20px;
+}
+
+.inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1976d2;
+    padding-top: 20px;
+    padding-left: 150px;
+    padding-bottom: 20px;
+    color: white;
+    border-radius: 10px;
+}
+
+.editar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1976d2;
+    padding-top: 20px;
+    padding-left: 150px;
+    padding-bottom: 20px;
+    color: white;
+    border-radius: 10px;
+}
+
+.btnActualizar{
+    background-color: green;
+}
+
+.profile-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 100px; /* Ajusta el tamaño de la imagen */
+    height: 100px; /* Asegura que la imagen sea cuadrada */
+    border-radius: 50%; /* Hace que la imagen sea redondeada */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsión */
+    border: 2px solid #209cee; /* Opcional: agrega un borde alrededor de la imagen */
+}
+
+@media screen and (max-width: 768px) {
+    .profile-img {
+        width: 80px; /* Reduce el tamaño en pantallas más pequeñas */
+        height: 80px;
+    }
+}
+
+.btnTrash {
+    background-color: #b10202;
+}
+
+/* Comentario para hacer un pull request */

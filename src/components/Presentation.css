@@ -1,0 +1,174 @@
+/* Contenedor principal con un fondo degradado */
+.legendary-presentation-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+    color: #ffffff;
+    overflow: hidden;
+}
+
+/* Overlay para efectos visuales */
+.legendary-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 69, 58, 0.7), rgba(63, 81, 181, 0.7));
+    opacity: 0.5;
+    z-index: 1;
+}
+
+/* Contenido principal de la presentación */
+.legendary-presentation-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.8); /* Fondo oscuro semi-transparente */
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+}
+
+/* Estilo del título principal */
+.legendary-presentation-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #f44336; /* Rojo intenso */
+    margin-bottom: 1rem;
+}
+
+/* Descripción de la aplicación */
+.legendary-presentation-description {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+/* Destacar "Noticias serias para gente seria" */
+.serious-news-highlight {
+    position: relative;
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: rgba(63, 81, 181, 0.9); /* Fondo azul semi-transparente */
+    border-radius: 15px;
+    border: 3px solid #2196f3; /* Borde azul brillante */
+    box-shadow: 0 0 25px rgba(63, 81, 181, 0.6); /* Sombra azul */
+    overflow: hidden;
+    animation: pulse 1.5s infinite; /* Animación de pulso */
+}
+
+/* Texto destacado */
+.highlight-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+}
+
+/* Animación de pulso para el recuadro */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 25px rgba(63, 81, 181, 0.6);
+    }
+    50% {
+        transform: scale(1.02);
+        box-shadow: 0 0 30px rgba(63, 81, 181, 0.8);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 25px rgba(63, 81, 181, 0.6);
+    }
+}
+
+/* Título de los objetivos */
+.legendary-presentation-objectives-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2196f3; /* Azul vibrante */
+    margin-bottom: 1rem;
+}
+
+/* Texto de los objetivos */
+.legendary-presentation-objectives {
+    font-size: 1.3rem;
+    color: #e0e0e0; /* Texto gris claro */
+    margin-bottom: 2rem;
+    line-height: 1.7;
+}
+
+/* Botón de acción */
+.legendary-start-button {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #f44336; /* Rojo vibrante */
+    padding: 0.8rem 1.8rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+/* Efecto de hover en el botón */
+.legendary-start-button:hover {
+    background-color: #d32f2f;
+    transform: scale(1.05); /* Efecto de escala */
+}
+
+/* Efecto al hacer clic en el botón */
+.legendary-start-button:active {
+    background-color: #b71c1c;
+    transform: scale(1); /* Vuelve al tamaño original */
+}
+
+/* Contenedor para la flecha de navegación */
+.navigate-to-articles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    padding: 0.5rem 1rem;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 50px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s;
+}
+
+/* Contenedor y estilo del texto y la flecha */
+.arrow-container {
+    display: flex;
+    align-items: center;
+}
+
+.arrow-text {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-right: 0.5rem;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.arrow-icon {
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.navigate-to-articles:hover .arrow-text {
+    opacity: 1;
+    transform: translateX(10px); /* Desplaza el texto al pasar el ratón */
+}
+
+.navigate-to-articles:hover {
+    transform: scale(1.05); /* Efecto de escala */
+}

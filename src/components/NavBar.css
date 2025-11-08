@@ -1,0 +1,39 @@
+.navbar {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-item {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #444;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-right: 10px; /* Espacio a la derecha de cada botón */
+}
+
+.navbar-item:last-child {
+    margin-right: 0; /* Elimina el margen en el último botón */
+}
+
+.navbar-item:hover {
+    background-color: #555;
+}
+
+#salir {
+    background-color: #ff4d4d; /* Rojo no tan fuerte */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}    

@@ -1,0 +1,61 @@
+/* Contenedor de la sección de comentarios */
+.comments-section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #f9f9f9; /* Color de fondo con transparencia */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Cada comentario individual */
+.comment {
+    padding: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #2a38b9;
+}
+
+/* El contenido del comentario */
+.comment p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.comentarios {
+    font-size: 25px;
+    line-height: 1.6;
+    color: #333;
+    text-align: center;
+}
+
+/* Información del pie de comentario */
+.comment-footer {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #777;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Botón de autor */
+.comment-footer p {
+    margin: 0;
+}
+
+/* Estilo para el botón de autor */
+.comment-footer .author {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Fecha */
+.comment-footer .date {
+    font-style: italic;
+}
+
+/* Efecto hover para los comentarios */
+.comment:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease;
+}

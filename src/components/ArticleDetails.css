@@ -1,0 +1,186 @@
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* div */
+
+.imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}                           
+
+.img{
+    border-radius: 10px;
+}
+
+.copete{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.article-footer{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.conteiner-form {
+    background-color: #ffffff; /* Fondo blanco para el formulario */
+    padding: 30px 40px 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 850px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.label {
+    color: #333333; /* Texto oscuro para buen contraste */
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.input,
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    font-size: 16px;
+    color: #333333; /* Texto oscuro */
+    background-color: #f9f9f9; /* Fondo claro */
+}
+
+.textarea {
+    width: 100%;
+    height: 300px; /* Ajusta esta altura según lo que necesites */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    font-size: 16px;
+    color: #333333; /* Texto oscuro */
+    background-color: #f9f9f9; /* Fondo claro */
+    resize: vertical; /* Permite al usuario redimensionar la altura */
+}
+
+.textarea-abstract {
+    width: 100%; /* Ajusta el ancho del contenedor */
+    height: 80px; /* Ajusta la altura del contenedor */
+    padding: 8px; /* Espaciado interno */
+    font-size: 14px; /* Tamaño de la fuente */
+    line-height: 1.5; /* Altura de línea */
+    resize: none; /* Evita que el usuario cambie el tamaño */
+    color: #333333; /* Asegura que el texto sea visible */
+    background-color: #f9f9f9; /* Fondo claro */
+}
+
+.input:focus,
+.textarea:focus,
+.textarea-abstract:focus,
+select:focus {
+    border-color: #66afe9;
+    outline: none;
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.conteiner-categories {
+    margin-bottom: 20px;
+}
+
+.button-create {
+    background-color: #4CAF50; /* Verde */
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button-create:hover {
+    background-color: #45a049;
+}
+
+.button-create:disabled {
+    background-color: #9c9c9c; /* Gris para botones deshabilitados */
+    cursor: not-allowed;
+}
+
+/* Container principal del artículo */
+.article-detail {
+    padding: 30px 60px 30px 30px;
+    margin: 20px auto;
+    max-width: 1200px; /* Aumento del ancho máximo del contenedor */
+    background-color: #f9f9f9; /* Fondo claro para el artículo */
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+    color: #333; /* Texto oscuro */
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 0px; /* Espaciado entre los elementos */
+}
+
+/* Título del artículo */
+.article-detail h1 {
+    font-size: 2.5rem; /* Tamaño del texto del título aumentado */
+    color: #333; /* Color del texto del título */
+    margin-bottom: 0px;
+}
+
+/* Abstracto del artículo */
+.article-detail h4 {
+    font-size: 1.5rem; /* Tamaño del texto del abstracto aumentado */
+    color: #666; /* Gris para el abstracto */
+    margin-bottom: 0px;
+}
+
+/* Contenido del artículo */
+.article-content {
+    font-size: 1rem;
+    line-height: 1.8; /* Aumento del interlineado para mejor legibilidad */
+    color: #444; /* Gris oscuro para el contenido */
+}
+
+/* Imagen del artículo */
+.article-detail img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados en la imagen */
+    margin-bottom: 20px;
+}
+
+/* Pie de página del artículo */
+.article-footer {
+    padding-top: 20px;
+    border-top: 1px solid #ddd; /* Línea separadora gris claro */
+    color: #666; /* Gris para el texto del pie de página */
+}
+
+.article-footer p {
+    font-size: 0.875rem;
+    margin: 10px 0;
+}
+
+/* Estilo para el contenido HTML sanitizado */
+.article-content p {
+    margin-bottom: 20px; /* Espaciado aumentado entre párrafos */
+}
+
+.article-content p:last-child {
+    margin-bottom: 0;
+}

@@ -1,0 +1,23 @@
+{
+  "noticias": [
+    {
+      "id": 1,
+      "titulo": "Nueva noticia de ejemplo 1",
+      "contenido": "Contenido de la noticia...",
+      "categoria": "tecnologia",
+      "fecha": "2024-01-15",
+      "imagen": "https://picsum.photos/400/200"
+    },
+    {
+      "id": 2,
+      "titulo": "Otra noticia importante",
+      "contenido": "Más contenido interesante...",
+      "categoria": "educacion",
+      "fecha": "2024-01-14",
+      "imagen": "https://picsum.photos/400/200"
+    }
+  ],
+  "categorias": [
+    "tecnologia", "educacion", "deportes", "ciencia"
+  ]
+}

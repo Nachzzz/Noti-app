@@ -1,0 +1,103 @@
+.cuerp {
+    margin:8;
+    background-color: var(--bg-color);
+  }
+  
+  .acheuno {
+    margin-top: 20px;
+    color: var(--text-color);
+  }
+  
+  .achetres {
+    margin-top: 20px;
+    color: var(--text-color);
+    text-align: center;
+  }
+  
+  .newform {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    color: var(--primary-color);
+  }
+  
+  .contenido{
+    display: flex;
+    justify-content: center;
+    background-color: var(--text-color);
+    border: 1px solid var(--neon-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    width: 800px;
+    text-align: center; 
+  }
+  
+  .contenido .miinput {
+    width: 600px;
+    height: 50px ;
+  }
+  
+  .buttonnew:hover {
+    background: var(--third-bis-color);
+    align-items: center;
+  }
+  
+  .buttonnew {
+    border:none;
+    width: 100%;
+    color:  var(--text-color);
+    font-size: 30px;
+    background:var(--bg-input-color);
+    padding: 15px 20px ;
+    border-radius: 5px;
+    cursor:pointer;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .customfileupload {
+    font-weight:bold;
+    color: var(--text-color);
+    padding: 9px 25px;
+    background: linear-gradient(to bottom right,  var(--third-color), var(--third-bis-color) , var(--bg-input-color));
+    border: 1px;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-color: var(--neon-color);
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin: 0 0.2em 0 0.2em;
+  }
+  
+  .customfileupload:hover {
+    background-color: var(--text-color);
+    color: var(--third-color);
+    transform: scale(1.1);
+  }
+  
+  .filename {
+    margin-left: 10px;
+    font-size: 14px;
+    color: var(--bg-color);
+  }
+  
+  .contenido .miinput2 {
+    width: 600px;
+    height: 160px ;
+  }
+  
+  .center {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }

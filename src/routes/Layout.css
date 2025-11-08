@@ -1,0 +1,7 @@
+body {
+    display: block !important; /* Sobrescribe cualquier configuración previa */
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    padding-top: 10px !important;
+}
